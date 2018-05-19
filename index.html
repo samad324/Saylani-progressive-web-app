@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/head.css" type="text/css">
+    <link rel="stylesheet" href="css/foot.css" type="text/css">
+    <link rel="stylesheet" href="css/center.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="saccFile.sass" rel="stylesheet/scss" type="text/css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Saylani Welfare</title>
+    <script>
+        if("serviceWorker" in  navigator){
+            navigator.serviceWorker.register("/sw.js").then(() => console.log("registered succesfully"));
+        }
+    </script>
+    <style>
+        @media (max-width: 576px) {
+            nav .container {
+                width: 100%;
+            }
+        }
+
+        html {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div id="top-strip" class="row">
+                <div class="col-xs-10 col-sm-6 col-md-7 col-lg-8 col-xl-9"></div>
+                <div class="col-xs-2 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <span class="sprite fb mt-1 ml-1">
+                        <a href="https://www.facebook.com/saylaniwelfare">
+                            <img class="img-responsive" src="images/spacer.png" alt="Facebook">
+                        </a>
+                    </span>
+                    <span class="sprite yt mt-1 ml-1">
+                        <a href="https://www.youtube.com/channel/UCaF6uj00Wj8_slSdn4aE0sQ">
+                            <img class="img-responsive" src="images/spacer.png" alt="YouTube">
+                        </a>
+                    </span>
+                    <span class="sprite tw mt-1 ml-1">
+                        <a href="https://twitter.com/OfficialSwit">
+                            <img class="img-responsive" src="images/spacer.png" alt="Twitter">
+                        </a>
+                    </span>
+                    <span class="sprite in mt-1 ml-1">
+                        <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home">
+                            <img class="img-responsive" src="images/spacer.png" alt="Linked in">
+                        </a>
+                    </span>
+                </div>
+                <div>
+                    <img class="mt-4 ml-5 img-responsive logo" src="images/Slogo.jpg" alt="Saylani Welfare">
+                </div>
+                <!-----------Navbar------------>
+                <nav class="navbar navbar-light  navbar-toggleable-md bg-primary navbar-inverse">
+                    <div class="container ">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand navbar-hover navbar-margin home brand" href="index.html">HOME</a>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mr-5">
+                                <li class="nav-item dropdown mr-2 mr-sm-1">
+                                    <a class="navbar-hover nav-link dropdown-toggle" href="#" data-toggle="dropdown">SAYLANI SERVICES</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item navbar-hover bold">MASS TRAINING</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">MEDICAL HELP</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">RESQUE SERVICES</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">SAYLANI DASTERKHAWAN</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">MORE SERVICES...</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-2 mr-sm-1">
+                                    <a class="navbar-hover nav-link dropdown-toggle" href="#" data-toggle="dropdown">FUTURE PRODUCTS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item navbar-hover bold">SAYLANI UNIVERSITY</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">SAYLANI BLODD BANK</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">SAYLANI CITY</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">FLOUR DISTRIBUTION</a>
+                                        <a href="#" class="dropdown-item navbar-hover bold">SAYLANI MOBILE SHOPS</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-2 mr-sm-1">
+                                    <a class="navbar-hover nav-link dropdown-toggle" href="#" data-toggle="dropdown">WEB SERVICES</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item navbar-hover">BOOK SECTION</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ISTAKHARA</a>
+                                        <a href="#" class="dropdown-item navbar-hover">HAJJ 2018</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ISLAMIC GUIDELINE FOR
+                                            <BR>TRADERS</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ONLINE QURAN ACADEMY</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ROHANI EJTEMA</a>
+                                        <a href="#" class="dropdown-item navbar-hover">NOORULQURAN</a>
+                                        <a href="#" class="dropdown-item navbar-hover">JOBS</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ANDROID APPLICATION</a>
+                                        <a href="#" class="dropdown-item navbar-hover">ARTICALS</a>
+                                        <a href="#" class="dropdown-item navbar-hover">NEWS & EVENTS</a>
+                                        <a href="#" class="dropdown-item navbar-hover">MEDIA LIBRARY</a>
+                                        <a href="#" class="dropdown-item navbar-hover">PICTURE GALLERY</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-2 mr-sm-1">
+                                    <a class="navbar-hover nav-link dropdown-toggle" href="#" data-toggle="dropdown">DONETION</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item navbar-hover">BANK DETAILS</a>
+                                        <a href="#" class="dropdown-item navbar-hover">DONATE WITH EASYPAISA</a>
+                                        <a href="#" class="dropdown-item navbar-hover">VISA / MASTER</a>
+                                        <a href="#" class="dropdown-item navbar-hover">PAYPAL</a>
+                                        <a href="#" class="dropdown-item navbar-hover">FOR US DONERS</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown mr-2 mr-sm-1">
+                                    <a class="navbar-hover nav-link dropdown-toggle" href="#" data-toggle="dropdown">REPORT</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item navbar-hover">TAX REPORT</a>
+                                        <a href="#" class="dropdown-item navbar-hover">MONTHLY REPORT</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item mr-2 mr-sm-1">
+                                    <a class="nav-link navbar-hover" href="#">ABOUT SAYLANI</a>
+                                </li>
+                                <li class="nav-item mr-2 mr-sm-1">
+                                    <a class="nav-link navbar-hover" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!----------Slider------------>
+        <div id="slider3" class="carousel slide container clearfix slider-shadow" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slider3" data-slide-to="0"></li>
+                <li class="active" data-target="#slider3" data-slide-to="1"></li>
+                <li class="active" data-target="#slider3" data-slide-to="2"></li>
+                <li class="active" data-target="#slider3" data-slide-to="3"></li>
+                <li class="active" data-target="#slider3" data-slide-to="4"></li>
+                <li class="active" data-target="#slider3" data-slide-to="5"></li>
+                <li class="active" data-target="#slider3" data-slide-to="6"></li>
+                <li class="active" data-target="#slider3" data-slide-to="7"></li>
+                <li class="active" data-target="#slider3" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="images/slide-1.jpg" alt="First Slide" class="d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide-2.jpg" alt="Second Slide" class="d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide-3.jpg" alt="Third Slide" class="d-block img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/slide-4.jpg" alt="Forth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/slide-5.jpg" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/slide-6.jpg" alt="Sixth slide">
+                </div>
+            </div>
+            <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider3" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--######################SERVICES & PROJECTs#######################-->
+        <div class="container">
+            <div class="row">
+                <!--Search div-->
+                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3  mt-4 services text-center">
+                    <h2 class="services-sides">SEARCH</h2>
+                    <div class="form-group ">
+                        <form action="http://saylaniwelfare.com/?">
+                            <input type="text" class="form-control inputs form-control-success" name="s" placeholder="Search">
+                            <input type="submit" value="Search" class="btn btn-primary mt-2 float-right">
+                        </form>
+                    </div>
+                </div>
+                <!--./Search div-->
+
+                <!---Sider Div-->
+                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 mt-4 services">
+                    <h2 class="text-center ">CURRENT PROJECTS</h2>
+                    <div id="slider1" class="carousel slide slide-2 " data-ride="carousel">
+                        <div class="carousel-inner" role="listbx">
+                            <div class="carousel-item active">
+                                <img src="images/slider-2-1.jpg" alt="First Slide" class="d-block w-100 img-responsive img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slider-2-2.jpg" alt="Second Slide" class="d-block img-responsive w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---./Sider Div-->
+
+                <!--subscribe Div-->
+                <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 mt-4 services text-center">
+                    <h2 class="services-sides">SUBSCRIBE</h2>
+                    <div class="form-group">
+                        <form action="#">
+                            <input type="text" class="form-control form-control-success inputs" placeholder="Email">
+                            <button type="button" class="btn btn-primary mt-2 float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!--./subscribe Div-->
+            </div>
+            <!--second services div-->
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <!--cources div-->
+                    <div class="services col-md-6 col-sm-12 col-lg-4 col-xl-4 container">
+                        <h2>COURCES</h2>
+                        <div class="container w-100" style="margin: auto;">
+                            <img src="images/Haj-button.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                        <p>
+                            <img src="images/ilme-tauqeet.jpg" class="img-fluid" alt="Responsive image">
+                        </p>
+                    </div>
+                    <!--end of cources div-->
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4">
+                        <div class="services">
+                            <h2>SAYLANI FUTURE PRODUCT</h2>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action mb-2 flex-column align-items-start active">
+                                <div class="d-flex w-100 just-content-between">
+                                    <h5 class="mb-1">SAYLANI UNIVERSITY</h5>
+                                </div>
+                                <p class="mb-1">Joint Secretary Mr Amir Madni announced New Future projects in Saylani Annual Symposium 2016
+                                    on 13th May , Saylani Aleemiyah University Complex.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action mb-2 flex-column align-items-start active">
+                                <div class="d-flex w-100 just-content-between">
+                                    <h5 class="mb-1">SAYLANI BLOOD BANK</h5>
+                                </div>
+                                <p class="mb-1">Joint Secretary Mr Amir Madni announced New Future projects in Saylani Annual Symposium 2016
+                                    on 13th May , that Saylani will be inaugurating Saylani Blood bank & Thalassemia Center
+                                    soon this year.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action mb-2 flex-column align-items-start active">
+                                <div class="d-flex w-100 just-content-between">
+                                    <h5 class="mb-1">SAYLANI CITY</h5>
+                                </div>
+                                <p class="mb-1">Joint Secretary Mr Amir Madni announced New Future projects in Saylani Annual Symposium 2016
+                                    on 13th May – Saylani Welfare City</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action mb-2 flex-column align-items-start active">
+                                <div class="d-flex w-100 just-content-between">
+                                    <h5 class="mb-1">FLOOR DISTRIBUTION</h5>
+                                </div>
+                                <p class="mb-1">Saylani Welfare Future plan is to distribute Flour among the citizens of Tharparker this
+                                    will reduce the ratio of hemoglobin , recent past times media has highlighted this issue
+                                    but there were no actions taken on this matter. Therefore Saylani Welfare lists this
+                                    project to be complete soon this year.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action mb-2 flex-column align-items-start active">
+                                <div class="d-flex w-100 just-content-between">
+                                    <h5 class="mb-1">SAYLANI MOBILE SHOPS</h5>
+                                </div>
+                                <p class="mb-1">Saylani Targets to distribute 5000 Mobile Shops in first phase among distressed people in
+                                    the city of Karachi , Faisalabad , Hyderabad & Lahore. The cost of one mobile shop will
+                                    be 250,000. Small Businesses can be run through this project many distressed people will
+                                    have access to self -Employment from which they can educate their child and fulfill their
+                                    basic necessities of Life.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--saylani support div-->
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-4 services">
+                        <h2 class="text-uppercase">Support Saylani</h2>
+                        <img src="images/visa-mastercard.jpg" class="img-fluid my-5" alt="Responsive image">
+                        <br>
+                        <a href="#" class="donor-a">
+                            <span class="donor-span">FOR</span> VISA & MASTERCARD</a>
+                        <br>
+                        <img src="images/uk-donors.jpg" class="img-fluid my-5" alt="Responsive image">
+                        <br>
+                        <a href="#" class="donor-a">
+                            <span class="donor-span">DONATE</span> FOR UK DONORS</a>
+                        <br>
+                        <img src="images/paypal.jpg" class="img-fluid my-5" alt="Responsive image">
+                        <br>
+                        <a href="#" class="donor-a">
+                            <span class="donor-span">FOR</span> ONLINE DONORS</a>
+                    </div>
+                    <!--end of saylani support div-->
+                </div>
+            </div>
+            <!--end second services div-->
+            <!---end of servicese and couces---->
+            <br>
+            <br>
+            <br>
+            <!------services-card-------->
+            <div class="container">
+                <!--container div-->
+                <div class="row">
+                    <div class="card col-md-6 col-sm-12 col-lg-4 col-xl-4" style="width:20rem">
+                        <img class="card-img-top mt-3" src="images/service-1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">INAUGURATION OF 20TH RO PLANT</h4>
+                            <p class="card-text">Saylani equipt R.O water plants in different cities of Pakistan.</p>
+                            <br>
+                            <a href="#" class="btn btn-primary btn-block">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-sm-12 col-lg-4 col-xl-3" style="width:20rem">
+                        <img class="card-img-top mt-3" src="images/service-2.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title text-uppercase">Saylani Mass Trainig Programe.</h4>
+                            <p class="card-text">Saylani mass training has a goal to boost economy of Pakistan by making Pakistan an I.T hub</p>
+                            <a href="#" class="btn btn-primary btn-block">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-sm-12 col-lg-4 col-xl-3" style="width:20rem">
+                        <img class="card-img-top mt-3" src="images/service-3.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title text-uppercase">Saylani Online Quran Academy.</h4>
+                            <p class="card-text">Saylani offers online Quran teacher for everyone who want to learn. and it's completely free.</p>
+                            <a href="#" class="btn btn-primary btn-block">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-sm-12 col-lg-4 col-xl-3" style="width:20rem">
+                        <img class="card-img-top mt-3" src="images/service-5.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title text-uppercase">saylani Mou With Aman Tech</h4>
+                            <p class="card-text">aylani Make a Hand-Shake with Aman tech to expend the area of sayalni.</p>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-primary btn-block">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--row div-->
+            </div>
+            <!--./conatiner div-->
+            <!-- <div class="card">
+                <div class="card-header card-service card-inverse ">
+                    Saylani Services
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-block">                            <img class="card-img-top h-50 w-100 card-anime" src="images/service-1.jpg" alt="Card image cap">
+                            <h4 class="card-title">INAUGURATION OF 20TH RO PLANT
+ </h4>
+                            <p class="card-text">Saylani equipt R.O water plants in different cities of Pakistan.</p>
+                            <a href="http://saylaniwelfare.com/inauguration-of-20th-ro-plant" class="btn btn-primary mt-3">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <img class="card-img-top w-100 card-anime" src="images/service-2.jpg" alt="Card image cap">
+                            <h4 class="card-title">Saylani Mass Trainig Programe.</h4>
+                            <p class="card-text">Saylani mass training has a goal to boost economy of Pakistan by making Pakistan an I.T hub.</p>
+                            <a href="http://saylaniwelfare.com/mass-training-entry-test-4-1-online/" class="btn btn-primary">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <img class="card-img-top w-100 card-anime" src="images/service-3.jpg" alt="Card image cap">
+                            <h4 class="card-title">Saylani Online Quran Academy.</h4>
+                            <p class="card-text">Saylani offers online Quran teacher for everyone who want to learn. and it's completely free.</p>
+                            <a href="http://saylaniwelfare.com/saylani-online-quran-academy/" class="btn btn-primary">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <img class="card-img-top h-50 w-100 card-anime" src="images/service-4.jpg" alt="Card image cap">
+                            <h4 class="card-title">Saylani Dastarkhan</h4>
+                            <p class="card-text">saylani offers free food to people who never afford lunch or dinner on hotel.</p>
+                            <a href="http://saylaniwelfare.com/saylani-dastarkhan/" class="btn mt-5 btn-primary">More Details</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <img class="card-img-top w-100 card-anime" src="images/service-5.jpg" alt="Card image cap">
+                            <h4 class="card-title">saylani Mou With Aman Tech</h4>
+                            <p class="card-text">Saylani Make a Hand-Shake with Aman tech to expend the area of sayalni.</p>
+                            <a href="http://saylaniwelfare.com/saylani-welfare-mou-with-aman-tech/" class="btn btn-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>-->
+            <!--######################ENd OF CARDS#####################-->
+        </div>
+        <!--###########################FOOTER################################-->
+        <footer class="page-footer center-on-small-only"></footer>
+        <div class="container-fluid footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 mt-5">
+                        <h5 class="footer-heading">ABOUT US</h5>
+                        <img src="images/Slogo.jpg" class="img-fluid" alt="Responsive image" title="welcome to saylani welfare trust" />
+                        <div>
+                            <p class="footer-text">
+                                <i class="fa fa-map-marker"></i> Head Office
+                                <br /> A-25, Bahadurabad Chowrangi
+                                <br /> Karachi, Pakistan </p>
+                            <p class="footer-text">
+                                <i class="fa fa-tty"></i> (+0092-213) 4130786-90 </p>
+                            <p class="footer-text">
+                                <i class="fa fa-phone"></i> UAN: 111-729-526 </p>
+                            <p class="footer-text">
+                                <i class="fa fa-envelope"></i> info@saylaniwelfare.com</p>
+                        </div>
+                    </div>
+                    <!--end of col1-->
+                    <div class="col-sm-6 mt-5 w-100">
+                    </div>
+                </div>
+                <!--end of container-->
+            </div>
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+                crossorigin="anonymous"></script>
+            <script>
+                $('.carousel').carousel({
+                    interval: 5000,
+                    keyboard: true,
+                    pause: 'hover',
+                    wrap: true
+                });
+
+                $('#slider4').on('slide.bs.carousel', function () {
+                    console.log('slide');
+                });
+                $('#slider4').on('slid.bs.carousel', function () {
+                    console.log('completed');
+                });
+            </script>
+        </div>
+</body>
+
+</html>
